@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liberty Gardern Estate</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  
+  l
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">Liberty Gardern Estate</div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#featured-properties">Properties</a></li>
+      <li><a href="#virtual-tours">Virtual Tours</a></li>
+      <li><a href="#mortgage-calculator">Calculator</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#property-alerts">Alerts</a></li>
+    </ul>
+    <div class="contact-btn">
+      <a href="#contact">Contact Us</a>
+    </div>
+  </nav>
+  <!-- Full-Screen Hero Section with Video -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Liberty Gardern Estate</h1>
+      <p>Find your exclusive property with us</p>
+      <a href="#featured-properties" class="cta-button">Explore Now</a>
+    </div>
+    <video autoplay muted loop id="hero-video">
+      <source src="./images/3410663-uhd_2562_1440_30fps.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+  </section>
+  <!-- About Us Section -->
+  <section class="about-section">
+    <div class="about-container">
+      <h2>About Us</h2>
+      <p class="intro">We are a leading real estate company dedicated to delivering luxury properties with exceptional service. Our goal is to provide the best experience for our clients.</p>
+      
+      <div class="about-details">
+        <div class="about-item">
+          <i class="fas fa-globe-americas"></i>
+          <h3>Global Presence</h3>
+          <p>Operating in major cities worldwide.</p>
+        </div>
+        <div class="about-item">
+          <i class="fas fa-handshake"></i>
+          <h3>Trusted Partners</h3>
+          <p>Working with the best in the industry.</p>
+        </div>
+        <div class="about-item">
+          <i class="fas fa-building"></i>
+          <h3>Luxurious Properties</h3>
+          <p>Offering high-end residential and commercial properties.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+
+  <!-- Featured Properties Section -->
+  <section id="featured-properties">
+    <h2>Featured Properties</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide active">
+          <img src="./images/pexels-expect-best-79873-323772.jpg" alt="Luxury Property 1">
+          <h3>Accra, Tema</h3>
+          <p>$15,000,000 - 6 Beds, 8 Baths</p>
+        </div>
+        <div class="slide">
+          <img src="./images/pexels-expect-best-79873-323780.jpg" alt="Luxury Property 2">
+          <h3>Accra,Tema</h3>
+          <p>$12,500,000 - 5 Beds, 6 Baths</p>
+        </div>
+        <div class="slide">
+          <img src="./images/pexels-padrinan-434139.jpg" alt="Luxury Property 3">
+          <h3>Acccra, Tema</h3>
+          <p>$8,000,000 - 4 Beds, 5 Baths</p>
+        </div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  </section>
+
+  <!-- Explore Properties by Location -->
+  <section id="map">
+    <h2>Explore Properties by Location</h2>
+    <div id="map-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127066.72273047525!2d-0.2621305302437148!3d5.5913738064711564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9084b2b7a773%3A0xbed14ed8650e2dd3!2sAccra!5e0!3m2!1sen!2sgh!4v1726243535558!5m2!1sen!2sgh" width="2000" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </section>
+
+  <!-- Virtual Tours Section -->
+  <section id="virtual-tours">
+    <h2>Take a Virtual Tour</h2>
+    <div class="virtual-tour">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/exampletour" title="Virtual Tour" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="virtual-tour">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/exampletour2" title="Virtual Tour 2" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Mortgage Calculator -->
+  <section id="mortgage-calculator">
+    <h2>Mortgage Calculator</h2>
+    <div class="calculator-container">
+      <input type="number" id="home-price" placeholder="Home Price ($)">
+      <input type="number" id="down-payment" placeholder="Down Payment (%)">
+      <input type="number" id="interest-rate" placeholder="Interest Rate (%)">
+      <input type="number" id="loan-term" placeholder="Loan Term (Years)">
+      <button onclick="calculateMortgage()">Calculate</button>
+      <div id="monthly-payment">Monthly Payment: $0</div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <h2>Client Testimonials</h2>
+    <div class="testimonial">
+      <p>"Our experience with this team was exceptional. They found us the perfect home."</p>
+      <p>- Sarah K., CEO</p>
+    </div>
+    <div class="testimonial">
+      <p>"Professional and attentive, they made the buying process seamless."</p>
+      <p>- John D., Investor</p>
+    </div>
+  </section>
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>What services do you offer?</h3>
+      <div class="answer">We offer a variety of real estate services, including buying, selling, and renting luxury properties globally.</div>
+    </div>
+    <div class="faq-item">
+      <h3>How can I book a property tour?</h3>
+      <div class="answer">You can book a tour by filling out our contact form or calling us directly. We offer virtual and in-person tours.</div>
+    </div>
+    <div class="faq-item">
+      <h3>Do you offer mortgage assistance?</h3>
+      <div class="answer">Yes, we provide mortgage calculators and can assist you in finding the right mortgage for your needs.</div>
+    </div>
+  </section>
+  <!-- Property Alerts -->
+  <section id="property-alerts">
+    <h2>Get Property Alerts</h2>
+    <form id="alerts-form">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Sign Up</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Exclusive Realty Group. All rights reserved.</p>
+    <div class="social-media-icons">
+      <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+      <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+    </div>
+  </footer>
+
+  <!-- JavaScript File -->
+  <script src="scripts.js"></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script> -->
+  <script>
+    // Real-Time Chat Integration (Tawk.to)
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/YOUR_UNIQUE_ID/default';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+    })();
+
+     // Smooth Scroll for Navigation Links
+     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Hamburger Menu Toggle
+    document.getElementById('hamburger').addEventListener('click', function() {
+        const navLinks = document.getElementById('nav-links');
+        navLinks.classList.toggle('active');
+    });
+       // FAQ Toggle
+       document.querySelectorAll('.faq-item h3').forEach(item => {
+      item.addEventListener('click', () => {
+        const answer = item.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+
+    // Image Slider
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    
+    function showSlides() {
+      slides.forEach((slide, i) => {
+        slide.style.display = i === slideIndex ? 'block' : 'none';
+      });
+    }
+    
+    function plusSlides(n) {
+      slideIndex = (slideIndex + n + slides.length) % slides.length;
+      showSlides();
+    }
+    
+    // Initialize the first slide
+    showSlides();
+
+
+    // FAQ Accordion Functionality
+document.querySelectorAll('.faq-question').forEach(button => {
+  button.addEventListener('click', () => {
+    const faqItem = button.parentElement;
+
+    faqItem.classList.toggle('active');
+  });
+});
+
+  </script>
+</body>
+</html>
