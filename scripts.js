@@ -70,3 +70,28 @@ function calculateMortgage() {
 
     document.getElementById('monthly-payment').textContent = `Monthly Payment: $${monthlyPayment.toFixed(2)}`;
 }
+const galleryItems = document.querySelectorAll('.gallery-item');
+const lightboxModal = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const closeLightbox = document.querySelector('.close-lightbox');
+
+// Open Lightbox
+galleryItems.forEach(item => {
+  item.addEventListener('click', () => {
+    const imgSrc = item.querySelector('img').src;
+    lightboxImg.src = imgSrc;
+    lightboxModal.style.display = 'flex'; // Show the modal
+  });
+});
+
+// Close Lightbox
+closeLightbox.addEventListener('click', () => {
+  lightboxModal.style.display = 'none'; // Hide the modal
+});
+
+// Close Lightbox on outside click
+lightboxModal.addEventListener('click', (e) => {
+  if (e.target === lightboxModal) {
+    lightboxModal.style.display = 'none';
+  }
+});
