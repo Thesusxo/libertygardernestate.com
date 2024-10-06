@@ -3,18 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LIBERTY GARDENS ESTATE</title>
+  <title>Liberty Garderns Estate</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+
+  </style>
   
   
 </head>
 <body>
   <!-- Navigation Bar -->
   <nav>
-    <div class="logo">LIBERTY GARDENS ESTATE</div>
+    <div class="logo">Liberty Garderns Estate</div>
     <div class="hamburger" id="hamburger">&#9776;</div>
     <ul class="nav-links" id="nav-links">
       <li><a href="#hero">Home</a></li>
@@ -28,47 +31,163 @@
       <a href="#contact">Contact Us</a>
     </div>
   </nav>
+  <!-- Scroll Indicator -->
+<div class="scroll-indicator"></div>
+
   <!-- Full-Screen Hero Section with Video -->
-  <section id="hero">
-    <div class="hero-content">
-      <h1>LIBERTY GARDENS ESTATE</h1>
-      <p>Find your exclusive property with us</p>
-      <a href="#featured-properties" class="cta-button">Explore Now</a>
+  <section id="hero" class="enhanced-hero">
+    <div class="hero-content-left">
+      <h1>Welcome to Liberty Gardens Estate</h1>
+      <p>
+        Imagine waking up to the soothing sound of waves, surrounded by lush greenery and serene ambiance. Look no further than Liberty Gardens Estate, your dream haven in Prampram.</p>
+      <a href="#featured-properties" class="cta-button">Find Out More</a>
     </div>
-    <video autoplay muted loop id="hero-video">   
-            <source src="./images/3410663-sd_640_360_30fps.mp4" type="video/mp4">
-      Your browser does not support HTML5 video.
-    </video>
-  </section>
-  <!-- About Us Section -->
-  <section class="about-section">
-    <div class="about-container">
-      <h2>About Us</h2>
-      <p class="intro">We are a leading real estate company dedicated to delivering luxury properties with exceptional service. Our goal is to provide the best experience for our clients.</p>
-      
-      <div class="about-details">
-        <div class="about-item">
-          <i class="fas fa-globe-americas"></i>
-          <h3>Global Presence</h3>
-          <p>Operating in major cities worldwide.</p>
-        </div>
-        <div class="about-item">
-          <i class="fas fa-handshake"></i>
-          <h3>Trusted Partners</h3>
-          <p>Working with the best in the industry.</p>
-        </div>
-        <div class="about-item">
-          <i class="fas fa-building"></i>
-          <h3>Luxurious Properties</h3>
-          <p>Offering high-end residential and commercial properties.</p>
-        </div>
+    <div class="hero-content-right">
+      <div class="image-frame">
+        <img src="./images/pexels-expect-best-79873-323780.jpg" alt="Luxury Property">
       </div>
     </div>
   </section>
   
   
   
+  <!-- About Us Section -->
+  <section class="about-section">
+    <div class="about-container">
+      <h2>About Us</h2>
+      <p class="intro">Liberty Gardens Estate is a master-planned gated community designed to provide a tranquil and luxurious living experience. Our estate offers serviced plots and off-plan units, catering to diverse tastes and preferences.</p>
+    </div>
+  </section>
+  
+  
+ <!-- Location Section -->
+ <section id="location" class="location-section-alt">
+  <div class="location-image">
+    <img src="./images/pexels-donaldtong94-189296.jpg" alt="Liberty Gardens Estate Location">
+  </div>
+  <div class="location-content">
+    <h2>Our Prime Location</h2>
+    <p>Liberty Gardens Estate is perfectly situated in Prampram, offering a mix of convenience and luxury.</p>
+    <ul>
+      <li>
+        <i class="fas fa-car"></i>
+        <div class="location-info">
+          <h3>5-minute drive to Beaches</h3>
+          <p>Relax and unwind with scenic ocean views just minutes away.</p>
+        </div>
+      </li>
+      <li>
+        <i class="fas fa-clock"></i>
+        <div class="location-info">
+          <h3>25-minute drive from Tema Motorway</h3>
+          <p>Easy access to the motorway makes commuting seamless.</p>
+        </div>
+      </li>
+      <li>
+        <i class="fas fa-store"></i>
+        <div class="location-info">
+          <h3>Nearby Resorts & Amenities</h3>
+          <p>Enjoy the best facilities, including resorts, shops, and more.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+  <!-- Explore Properties by Location -->
+  <section id="map">
+    <h2>Explore Properties by Location</h2>
+    <div id="map-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127066.72273047525!2d-0.2621305302437148!3d5.5913738064711564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9084b2b7a773%3A0xbed14ed8650e2dd3!2sAccra!5e0!3m2!1sen!2sgh!4v1726243535558!5m2!1sen!2sgh" width="2000" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </section>
 
+
+<!-- Unit Types Section -->
+<section id="unit-types" class="unit-types-section">
+  <h2><i class="fas fa-home"></i> Unit Types</h2>
+  <p>Choose from our exquisite range:</p>
+  
+  <div class="unit-types-container">
+    <div class="unit-card">
+      <i class="fas fa-bed"></i>
+      <h3>3 Bedroom Detached and Duplex</h3>
+      <p>Spacious homes designed for luxury living with large balconies and private gardens.</p>
+    </div>
+    
+    <div class="unit-card">
+      <i class="fas fa-bed"></i>
+      <h3>4 Bedroom Executive and Deluxe</h3>
+      <p>Modern architecture with high-end finishes, large living spaces, and double garages.</p>
+    </div>
+    
+    <div class="unit-card">
+      <i class="fas fa-bed"></i>
+      <h3>2 Bedroom Terrace Units</h3>
+      <p>Perfect for smaller families or individuals, these units offer efficient space use and comfort.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Why Prampram Section -->
+<section id="why-prampram" class="split-screen-section">
+  <div class="content-left">
+    <h2><i class="fas fa-thumbs-up"></i> Why Prampram?</h2>
+    <p class="intro">Discover the unique charm of Prampram:</p>
+    <ul class="features-list">
+      <li><i class="fas fa-peace"></i> Serene and cozy atmosphere</li>
+      <li><i class="fas fa-users"></i> Cosmopolitan community</li>
+      <li><i class="fas fa-sun"></i> Beautiful and clean beaches</li>
+      <li><i class="fas fa-umbrella-beach"></i> Luxurious beach resorts</li>
+      <li><i class="fas fa-cloud-sun"></i> Breezy and calming weather</li>
+    </ul>
+  </div>
+
+  <div class="image-right">
+    <div class="parallax-image">
+      <img src="./images/332.jpg" alt="Prampram scenery" />
+    </div>
+  </div>
+</section>
+
+
+<!-- Amenities Section -->
+<section id="amenities" class="amenities-section">
+  <h2><i class="fas fa-cogs"></i> Amenities</h2>
+  
+  <div class="amenities-container">
+    <div class="amenity-card">
+      <i class="fas fa-lock"></i>
+      <h3>24/7 Security</h3>
+      <p>Gated community with round-the-clock security services.</p>
+    </div>
+
+    <div class="amenity-card">
+      <i class="fas fa-road"></i>
+      <h3>Tarred Roads</h3>
+      <p>Well-paved roads and illuminated streets for safety and convenience.</p>
+    </div>
+
+    <div class="amenity-card">
+      <i class="fas fa-water"></i>
+      <h3>Utilities</h3>
+      <p>Reliable water supply and electricity to all units.</p>
+    </div>
+
+    <div class="amenity-card">
+      <i class="fas fa-swimming-pool"></i>
+      <h3>Recreational Facilities</h3>
+      <p>Enjoy a swimming pool, gym, and a well-equipped playground.</p>
+    </div>
+
+    <div class="amenity-card">
+      <i class="fas fa-utensils"></i>
+      <h3>Commercial Areas</h3>
+      <p>Shops and restaurants located conveniently within the estate.</p>
+    </div>
+  </div>
+</section>
   <!-- Featured Properties Section -->
   <section id="featured-properties">
     <h2>Featured Properties</h2>
@@ -95,11 +214,7 @@
     </div>
   </section>
 
-  <!-- Explore Properties by Location -->
-  <section id="map">
-    <h2>Explore Properties by Location</h2>
-    <div id="map-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127066.72273047525!2d-0.2621305302437148!3d5.5913738064711564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9084b2b7a773%3A0xbed14ed8650e2dd3!2sAccra!5e0!3m2!1sen!2sgh!4v1726243535558!5m2!1sen!2sgh" width="2000" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-  </section>
+
 
   <!-- Virtual Tours Section -->
   <section id="virtual-tours">
@@ -124,32 +239,167 @@
       <div id="monthly-payment">Monthly Payment: $0</div>
     </div>
   </section>
-
-  <!-- Testimonials Section -->
-  <section id="testimonials">
-    <h2>Client Testimonials</h2>
-    <div class="testimonial">
-      <p>"Our experience with this team was exceptional. They found us the perfect home."</p>
-      <p>- Sarah K., CEO</p>
-    </div>
-    <div class="testimonial">
-      <p>"Professional and attentive, they made the buying process seamless."</p>
-      <p>- John D., Investor</p>
+  <section class="real-estate-gallery">
+    <div class="gallery-container">
+      <div class="gallery-item large">
+        <img src="./images/pexels-expect-best-79873-323772.jpg" alt="Modern Villa">
+        <div class="overlay">
+          <h3>Modern Villa</h3>
+        </div>
+      </div>
+      <div class="gallery-item small">
+        <img src="./images/pexels-expect-best-79873-323775.jpg" alt="Beachfront Property">
+        <div class="overlay">
+          <h3>Beachfront Property</h3>
+        </div>
+      </div>
+      <div class="gallery-item small">
+        <img src="./images/pexels-pixasquare-1115804.jpg" alt="Luxury Apartment">
+        <div class="overlay">
+          <h3>Luxury Apartment</h3>
+        </div>
+      </div>
+      <div class="gallery-item large">
+        <img src="./images/pexels-padrinan-434139.jpg" alt="Gated Community">
+        <div class="overlay">
+          <h3>Gated Community</h3>
+        </div>
+      </div>
+      <div class="gallery-item small">
+        <img src="./images/pexels-expect-best-79873-323780.jpg" alt="Penthouse View">
+        <div class="overlay">
+          <h3>Penthouse View</h3>
+        </div>
+      </div>
     </div>
   </section>
+  <div class="lightbox-modal" id="lightbox">
+    <div class="lightbox-content">
+      <span class="close-lightbox">&times;</span>
+      <img id="lightbox-img" src="" alt="Selected Real Estate Image">
+    </div>
+  </div>
+  
+  
+  
+  <!-- Testimonials Section -->
+  <section class="testimonial-section">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-carousel-wrapper">
+      <div class="testimonial-carousel">
+        <div class="testimonial-card">
+          <div class="client-info">
+            <img src="./images/1632.jpg" alt="Client Image">
+            <div class="client-details">
+              <h3>Jane Doe</h3>
+              <p>CEO at XYZ Corp</p>
+            </div>
+          </div>
+          <p class="testimonial-text">"The best experience we've ever had. Absolutely phenomenal support and quality!"</p>
+        </div>
+  
+        <div class="testimonial-card">
+          <div class="client-info">
+            <img src="./images/1632.jpg" alt="Client Image">
+            <div class="client-details">
+              <h3>John Smith</h3>
+              <p>Manager at ABC Inc</p>
+            </div>
+          </div>
+          <p class="testimonial-text">"Working with this company has been a game-changer for our business."</p>
+        </div>
+        <!-- Add more testimonials as needed -->
+        <div class="testimonial-card">
+          <div class="client-info">
+            <img src="./images/1632.jpg" alt="Client Image">
+            <div class="client-details">
+              <h3>John Smith</h3>
+              <p>Manager at ABC Inc</p>
+            </div>
+          </div>
+          <p class="testimonial-text">"Working with this company has been a game-changer for our business."</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="client-info">
+            <img src="./images/1632.jpg" alt="Client Image">
+            <div class="client-details">
+              <h3>John Smith</h3>
+              <p>Manager at ABC Inc</p>
+            </div>
+          </div>
+          <p class="testimonial-text">"Working with this company has been a game-changer for our business."</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="client-info">
+            <img src="./images/1632.jpg" alt="Client Image">
+            <div class="client-details">
+              <h3>John Smith</h3>
+              <p>Manager at ABC Inc</p>
+            </div>
+          </div>
+          <p class="testimonial-text">"Working with this company has been a game-changer for our business."</p>
+        </div>
+       </div>
+    </div>
+    
+    
+  </section> 
+  
+  
+
+
+
+  <!-- Blog Section -->
+  <section class="blog-section">
+    <div class="hero-banner">
+      <img src="./images/6436976_3312516.jpg" alt="Featured Blog" />
+      <div class="banner-text">
+        <h1>News and Updates</h1>
+        <p>Exciting post description that grabs attention.</p>
+      </div>
+    </div>
+  
+    <div class="blog-posts">
+      <div class="post-card">
+        <img src="./images/pexels-expect-best-79873-323772.jpg" alt="Blog Image">
+        <div class="post-content">
+          <h2>Blog Post Title 1</h2>
+          <p>Blog post short description goes here...</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+  
+      <div class="post-card">
+        <div class="post-content">
+          <h2>Blog Post Title 2</h2>
+          <p>Another post description...</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+        <img src="./images/pexels-expect-best-79873-323780.jpg" alt="Blog Image">
+      </div>
+      <!-- Repeat alternating post-cards -->
+    </div>
+  </section>
+  
+  
+
+ 
+
   <section id="faq">
     <h2>Frequently Asked Questions</h2>
     <div class="faq-item">
-      <h3>What services do you offer?</h3>
-      <div class="answer">We offer a variety of real estate services, including buying, selling, and renting luxury properties globally.</div>
+      <h3>Q: What types of units are available?</h3>
+      <div class="answer">A: 3 bedroom detached and duplex, 4 bedroom executive and deluxe, 2 bedroom terrace units.
+      </div>
     </div>
     <div class="faq-item">
-      <h3>How can I book a property tour?</h3>
-      <div class="answer">You can book a tour by filling out our contact form or calling us directly. We offer virtual and in-person tours.</div>
+      <h3>Q: Is the estate gated?</h3>
+      <div class="answer">A: Yes, with 24/7 security.
+      </div>
     </div>
     <div class="faq-item">
-      <h3>Do you offer mortgage assistance?</h3>
-      <div class="answer">Yes, we provide mortgage calculators and can assist you in finding the right mortgage for your needs.</div>
+      <h3>Q: What amenities are available?</h3>
+      <div class="answer">A: Swimming pool, gym, playground, shops, restaurants.</div>
     </div>
   </section>
   <!-- Property Alerts -->
@@ -160,15 +410,58 @@
       <button type="submit">Sign Up</button>
     </form>
   </section>
+<!-- Lead Capture Form Modal -->
+<div id="lead-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" id="close-modal">&times;</span>
+    <h2>Get Exclusive Property Alerts</h2>
+    <form id="lead-form">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
 
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 LIBERTY GARDENS ESTATE. All rights reserved.</p>
-    <div class="social-media-icons">
-      <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-      <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section about">
+            <h3>Liberty Gardens Estate</h3>
+        
+        </div>
+        <div class="footer-section links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Unit Types</a></li>
+                <li><a href="#">Amenities</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h4>Contact Us</h4>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> Prampram, Ghana</li>
+                <li><i class="fas fa-phone-alt"></i>  0245002044</li>
+                <li><i class="fas fa-envelope"></i>info@libertygardenestate.com</li>
+            </ul>
+        </div>
+        <div class="footer-section social">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
     </div>
-  </footer>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Liberty Gardens Estate | All rights reserved.</p>
+    </div>
+</footer>
+
 
   <!-- JavaScript File -->
   <script src="scripts.js"></script>
@@ -235,6 +528,118 @@ document.querySelectorAll('.faq-question').forEach(button => {
     faqItem.classList.toggle('active');
   });
 });
+// Pop-up modal logic
+window.onload = function() {
+    setTimeout(() => {
+        document.getElementById("lead-modal").style.display = "flex";
+    }, 5000); // Show modal after 5 seconds
+};
+
+document.getElementById("close-modal").onclick = function() {
+    document.getElementById("lead-modal").style.display = "none";
+};
+// Scroll Indicator Logic
+window.onscroll = function() {
+    var scroll = document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (scroll / height) * 100;
+    document.querySelector(".scroll-indicator").style.width = scrolled + "%";
+};
+// Property Comparison Logic
+let selectedProperties = [];
+document.querySelectorAll('.slide').forEach((slide) => {
+    slide.addEventListener('click', () => {
+        const propertyInfo = slide.querySelector('h3').innerText + " " + slide.querySelector('p').innerText;
+        selectedProperties.push(propertyInfo);
+        if (selectedProperties.length === 2) {
+            document.getElementById('comparison-table').innerHTML = selectedProperties.join(' vs ');
+            selectedProperties = [];
+        }
+    });
+});
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    const testimonialCarousel = document.querySelector('.testimonial-carousel');
+    const testimonials = Array.from(document.querySelectorAll('.testimonial-card'));
+    
+    let currentIndex = 0;
+    const totalTestimonials = testimonials.length;
+
+    function updateCarousel(index) {
+      // Ensure the index is within bounds
+      if (index < 0) {
+        currentIndex = totalTestimonials - 1;
+      } else if (index >= totalTestimonials) {
+        currentIndex = 0;
+      } else {
+        currentIndex = index;
+      }
+
+      // Move the testimonials container to show the current testimonial
+      const offset = -currentIndex * testimonials[0].offsetWidth;
+      testimonialCarousel.style.transform = `translateX(${offset}px)`;
+    }
+
+    nextButton.addEventListener('click', function() {
+      updateCarousel(currentIndex + 1);
+    });
+
+    prevButton.addEventListener('click', function() {
+      updateCarousel(currentIndex - 1);
+    });
+  });
+
+// Automatic sliding for testimonials
+const carousel = document.querySelector('.testimonial-carousel');
+let isSliding = true;
+let slideInterval;
+let currentIndex = 0;
+const slideWidth = carousel.querySelector('.testimonial-card').offsetWidth;
+const totalSlides = carousel.children.length;
+
+// Function to move to the next slide
+function moveToNextSlide() {
+  currentIndex++;
+  if (currentIndex >= totalSlides) {
+    currentIndex = 0; // Reset to the first slide if it's the last
+  }
+  carousel.style.transform = `translateX(-${currentIndex * (slideWidth + 30)}px)`; // Add margin (30px)
+}
+
+// Start the automatic sliding
+function startAutoSlide() {
+  slideInterval = setInterval(moveToNextSlide, 3000); // Slide every 3 seconds
+}
+
+// Pause sliding on hover and resume when not hovering
+carousel.addEventListener('mouseenter', () => clearInterval(slideInterval));
+carousel.addEventListener('mouseleave', () => startAutoSlide());
+
+// Initialize the auto sliding
+startAutoSlide();
+const images = [
+  './images/pexels-expect-best-79873-323780.jpg', 
+  './images/pexels-expect-best-79873-323772.jpg', 
+  './images/pexels-padrinan-434139.jpg'
+]; // Add paths to different images here
+let currentImageIndex = 0;
+const imageFrame = document.querySelector('.image-frame img');
+
+function cycleImages() {
+  imageFrame.style.animation = 'fadeOutImage 1s ease-in-out forwards';
+  
+  setTimeout(() => {
+    currentImageIndex = (currentImageIndex + 1) % images.length; // Cycle to next image
+    imageFrame.src = images[currentImageIndex];
+    imageFrame.style.animation = 'fadeInImage 1s ease-in-out forwards'; // Fade-in new image
+  }, 1000); // Wait for fade-out animation to complete
+}
+
+setInterval(cycleImages, 5000); // Change image every 5 seconds
+
+
 
   </script>
 </body>
