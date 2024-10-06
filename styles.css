@@ -618,7 +618,7 @@ nav .contact-btn a {
     flex: 1 1 30%;
   }
 }
-/* Split Screen Section */
+/* Base Split Screen Section */
 .split-screen-section {
   display: flex;
   height: 100vh;
@@ -665,7 +665,6 @@ nav .contact-btn a {
   color: #d4af37; /* Gold */
 }
 
-/* Parallax Image */
 .image-right {
   flex: 1;
   overflow: hidden;
@@ -684,7 +683,7 @@ nav .contact-btn a {
   transform: translateY(-50px); /* Parallax effect */
 }
 
-/* Responsive Design */
+/* Responsive Design for Tablets */
 @media (max-width: 1024px) {
   .split-screen-section {
     flex-direction: column;
@@ -701,6 +700,68 @@ nav .contact-btn a {
 
   .parallax-image img {
     height: 300px;
+  }
+}
+
+/* Responsive Design for Small Screens (Mobile Phones) */
+@media (max-width: 768px) {
+  .content-left {
+    padding: 30px;
+  }
+
+  .content-left h2 {
+    font-size: 2rem; /* Decrease heading size */
+  }
+
+  .content-left .intro {
+    font-size: 1rem; /* Reduce intro font size */
+  }
+
+  .features-list li {
+    font-size: 1.1rem; /* Slightly smaller list item font */
+  }
+
+  .features-list li i {
+    font-size: 1.3rem; /* Smaller icons */
+  }
+
+  .image-right {
+    height: 250px;
+  }
+
+  .parallax-image img {
+    height: 250px;
+  }
+}
+
+/* Responsive Design for Very Small Screens (Extra Small Mobile Phones) */
+@media (max-width: 480px) {
+  .content-left {
+    padding: 20px;
+  }
+
+  .content-left h2 {
+    font-size: 1.8rem; /* Further reduce heading size */
+  }
+
+  .content-left .intro {
+    font-size: 0.9rem; /* Smaller intro font size */
+  }
+
+  .features-list li {
+    font-size: 1rem; /* Smaller list item font size */
+  }
+
+  .features-list li i {
+    font-size: 1.2rem; /* Further smaller icons */
+  }
+
+  .image-right {
+    height: 200px;
+  }
+
+  .parallax-image img {
+    height: 200px;
   }
 }
 
@@ -1148,6 +1209,7 @@ nav .contact-btn a {
   }
       /* Modal Styling */
 /* Modal Styling */
+/* Base Modal Styles */
 .modal {
   display: none; /* Hidden by default */
   position: fixed;
@@ -1175,9 +1237,7 @@ nav .contact-btn a {
   font-family: 'Poppins', sans-serif;
 }
 
-
-
-#lead-form input[type="text"], 
+#lead-form input[type="text"],
 #lead-form input[type="email"] {
   width: 90%;
   padding: 15px;
@@ -1189,7 +1249,7 @@ nav .contact-btn a {
   transition: border-color 0.3s ease;
 }
 
-#lead-form input[type="text"]:focus, 
+#lead-form input[type="text"]:focus,
 #lead-form input[type="email"]:focus {
   border-color: #f4b41a;
 }
@@ -1236,10 +1296,10 @@ nav .contact-btn a {
   to { transform: translateY(0); }
 }
 
-/* Responsive Modal */
-@media (max-width: 600px) {
+/* Responsive Modal for Tablets and Smaller Screens */
+@media (max-width: 768px) {
   .modal-content {
-    width: 90%;
+    width: 70%;
     padding: 30px;
   }
 
@@ -1256,6 +1316,41 @@ nav .contact-btn a {
   #lead-form button {
     padding: 12px;
     font-size: 16px;
+  }
+
+  .close-btn {
+    font-size: 20px;
+    top: 10px;
+    right: 15px;
+  }
+}
+
+/* Responsive Modal for Extra Small Screens */
+@media (max-width: 480px) {
+  .modal-content {
+    width: 70%;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 18px; /* Smaller font size for heading */
+  }
+
+  #lead-form input[type="text"], 
+  #lead-form input[type="email"] {
+    padding: 10px;
+    font-size: 12px; /* Smaller input fields */
+  }
+
+  #lead-form button {
+    padding: 10px;
+    font-size: 14px; /* Smaller button size */
+  }
+
+  .close-btn {
+    font-size: 18px; /* Smaller close button */
+    top: 10px;
+    right: 10px;
   }
 }
 
